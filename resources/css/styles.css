@@ -30,19 +30,18 @@ body {
 
 /*Top Banner*/
 
-.top-banner {
-  width: 100%;
+.main-banner {
   display: flex;
   padding: 32px 24px;
 }
 
-.top-banner .left {
+.main-banner .left {
   width: 60%;
   height: auto;
   margin-right: 12px;
 }
 
-.top-banner .right {
+.start .right {
   width: 30%;
   margin-left: 12px;
   display: flex;
@@ -50,12 +49,94 @@ body {
   justify-content: center;
 }
 
-.top-banner img {
+.main-banner img {
   width: 100%;
+  height: auto;
 }
 
-.top-banner h4 {
+.start h4 {
   text-align: center;
   background-color: gray;
   padding: 8px 0px;
+}
+
+/*Keep Practicing Banner*/
+
+.mainbanner.practicing {
+  align-items: flex-start;
+}
+
+.practicing .right {
+  width: 40%;
+  border: medium green solid;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.flag .img {
+  width: 35%;
+}
+
+#orientation {
+  padding-top: 0px;
+}
+
+.flag img {
+  width: 100%;
+  height: auto;
+}
+
+.flag .right {
+  width: 65%;
+}
+
+.flag .right a, #topic, #deets {
+  display: block;
+}
+
+/*Learning Section*/
+
+#learning {
+  flex-direction: column;
+  padding: 32px 60px;
+
+}
+
+#learning h1{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.learning-content {
+  margin: 0 auto;
+}
+
+.course {
+  width: 33.33%;
+  background-color: white;
+  margin: 16px;
+}
+
+.info {
+  background-color: white;
+  padding: 16px;
+}
+
+.info span {
+  display: block;
+}
+
+.row {
+  display: flex;
+  margin-top: 32px;
+}
+
+/*Thesis Section*/
+
+#learning {
+  flex-direction: column;
 }
