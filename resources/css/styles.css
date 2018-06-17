@@ -1,0 +1,61 @@
+
+
+body {
+  margin: 0;
+}
+
+.graybox {background-color: lightgray;}
+
+
+
+/*Header*/
+
+.header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px 0px 24px;
+}
+
+.header li {
+  display: inline;
+  margin: 0px 8px 0px 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/*Top Banner*/
+
+.top-banner {
+  width: 100%;
+  display: flex;
+  padding: 32px 24px;
+}
+
+.top-banner .left {
+  width: 60%;
+  height: auto;
+  margin-right: 12px;
+}
+
+.top-banner .right {
+  width: 30%;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-banner img {
+  width: 100%;
+}
+
+.top-banner h4 {
+  text-align: center;
+  background-color: gray;
+  padding: 8px 0px;
+}
