@@ -1,4 +1,6 @@
-
+html {
+  font-size: 16px;
+}
 
 body {
   margin: 0;
@@ -23,24 +25,19 @@ main {
   display: block;
 }
 
-.main-banner .right {
-  width: 40%;
-}
-
-
 /*Header*/
 
-.header {
-  height: 64px;
+header {
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 16px 0px 24px;
+  padding: 0px 1rem 0px 1rem;
 }
 
-.header li {
+header li {
   display: inline;
-  margin: 0px 8px 0px 8px;
+  margin: 0px 0.5rem 0px 0.5rem;
 }
 
 .logo {
@@ -48,25 +45,21 @@ main {
   align-items: center;
 }
 
-/*Top Banner*/
+/*Banners General*/
 
 .main-banner {
   display: flex;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 .main-banner .left {
   width: 60%;
-  height: auto;
-  margin-right: 12px;
+  margin-right: 1.5rem;
 }
 
-.start .right {
-  width: 30%;
-  margin-left: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main-banner .right {
+  width: 40%;
+  height: auto;
 }
 
 .main-banner img {
@@ -74,38 +67,39 @@ main {
   height: auto;
 }
 
-.start h4 {
+/*Top Banner*/
+
+#start .right {
+  width: 30%;
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#start h4 {
   text-align: center;
   background-color: gray;
-  padding: 8px 0px;
+  padding: 0.5rem;
 }
 
 /*Keep Practicing Banner*/
 
-.mainbanner.practicing {
-  align-items: flex-start;
-}
 
-.practicing .right {
-  width: 40%;
-  position: relative;
-  bottom: 16px;
+#practicing .text-container h2 {
+  margin: 2rem 0 1.5rem 0;
 }
 
 .flag {
   display: flex;
   align-items: center;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .flag .img {
   width: 35%;
   max-height: 100%;
-  margin: 16px;
-}
-
-#orientation {
-  padding-top: 0px;
+  margin: 1rem;
 }
 
 .flag img {
@@ -113,18 +107,26 @@ main {
   height: auto;
 }
 
-.flag .right {
+.flaginfo {
   width: 65%;
 }
 
-.flag .right a, #topic, #deets {
+.flaginfo a, #topic, #deets {
   display: block;
+}
+
+#orientation .img {
+  margin-top: 0px;
+}
+
+#orientation {
+  padding-top: 0px;
 }
 
 /*Learning Section*/
 
 #learning {
-  padding: 32px 60px;
+  padding: 2rem 3.75rem;
 
 }
 
@@ -135,12 +137,12 @@ main {
 .course {
   width: 33.33%;
   background-color: white;
-  margin: 16px;
+  margin: 1rem;
 }
 
 .info {
   background-color: white;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .info span {
@@ -149,16 +151,16 @@ main {
 
 .row {
   display: flex;
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
-  margin: 16px 24px;
+  margin: 1rem 1.5rem;
 }
 
 .terms span {
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
