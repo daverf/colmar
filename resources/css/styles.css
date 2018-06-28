@@ -1,28 +1,21 @@
 html {
   font-size: 16px;
+  font-family: arial;
 }
 
 body {
   margin: 0;
+  font-size: 1rem;
 }
 
 main {
   width: 100%;
 }
+
 .graybox {background-color: lightgray;}
 
 .column {
   flex-direction: column;
-}
-
-.column h1 {
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-}
-
-.main-banner h1 {
-  display: block;
 }
 
 /*Header*/
@@ -32,12 +25,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 1rem 0px 1rem;
+  padding: 0px 1rem;
+  font-size: 1.25rem;
 }
 
 header li {
   display: inline;
-  margin: 0px 0.5rem 0px 0.5rem;
+  margin: 0px 0.5rem;
 }
 
 .logo {
@@ -45,7 +39,7 @@ header li {
   align-items: center;
 }
 
-/*Banners General*/
+/*Main-Banner General*/
 
 .main-banner {
   display: flex;
@@ -59,46 +53,66 @@ header li {
 
 .main-banner .right {
   width: 40%;
-  height: auto;
 }
 
-.main-banner img {
+.left img {
   width: 100%;
   height: auto;
 }
 
 /*Top Banner*/
 
+#start {
+  align-items: center;
+}
+
 #start .right {
   width: 30%;
   margin-left: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #start h4 {
   text-align: center;
   background-color: gray;
   padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#start h3 {
+  font-size: 1.5rem;
+}
+
+#start h2 {
+  font-size: 2rem;
 }
 
 /*Keep Practicing Banner*/
 
+#practicing {
+  align-items: flex-start;
+}
 
 #practicing .text-container h2 {
   margin: 2rem 0 1.5rem 0;
 }
 
+#practicing .right {
+  position: relative;
+  bottom: 1rem;
+}
+
+#practicing .flag {
+  width: 100%;
+}
+
 .flag {
   display: flex;
   align-items: center;
-  padding: 1rem;
 }
 
 .flag .img {
   width: 35%;
-  max-height: 100%;
+  height: auto;
   margin: 1rem;
 }
 
@@ -115,23 +129,35 @@ header li {
   display: block;
 }
 
-#orientation .img {
-  margin-top: 0px;
+#topic, #deets {
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
-#orientation {
-  padding-top: 0px;
+#topic {
+  font-size: 1.25rem;
 }
+
+#deets {
+  font-size: 1rem;
+}
+
+
 
 /*Learning Section*/
 
 #learning {
   padding: 2rem 3.75rem;
-
 }
 
-.learning-content {
+#learning h1 {
+  text-align: center;
   margin: 0 auto;
+}
+
+#learning img {
+  width: 100%;
+  height: auto;
 }
 
 .course {
@@ -149,11 +175,24 @@ header li {
   display: block;
 }
 
+#subject {
+  margin-bottom: 1rem;
+}
+
 .row {
   display: flex;
   margin-top: 2rem;
 }
 
+/*Thesis Banner*/
+
+#thesis {
+  align-items: flex-start;
+}
+
+#thesis .flag {
+  width: 100%;
+}
 
 footer {
   display: flex;
@@ -163,4 +202,133 @@ footer {
 
 .terms span {
   margin-left: 0.5rem;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 750px){
+
+.main-banner {
+  width: auto;
+  display: block;
+  padding: 0;
+}
+
+.main {
+  width: auto;
+}
+
+#start .left {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#start .right {
+  width: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+
+}
+
+#start h4 {
+  color: white;
+}
+
+
+#practicing .left {
+  display: none;
+}
+
+#practicing .right {
+  padding: 1rem;
+  position: static;
+  width: auto;
+
+}
+
+.flag {
+  display: block;
+  width: auto;
+  margin-bottom: 4rem;
+  background-color: white;
+}
+
+.flag .img {
+  display: none;
+}
+
+.flag img {
+  width: 100%;
+  height: auto;
+}
+
+.flaginfo {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+#learning {
+  background-color: white;
+  display: block;
+  padding: 0;
+}
+
+.info {
+  width: auto;
+}
+
+.course {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#courses, .info p {
+  display: none;
+}
+
+.row {
+  display: block;
+  width: 100%;
+}
+
+.course .img {
+  display: none;
+}
+
+#subject {
+  background-color: gray;
+  width: auto;
+  padding: 2rem;
+}
+
+#thesis .right, #thesis .left h2, #thesis .left p {
+  display: none;
+}
+
+#thesis {
+  width: auto;
+}
+
+#thesis h1 {
+  text-align: center;
+}
+
+#thesis .left {
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0;
+}
+
+}
+
+@media only screen and (min-width: 751px){
+  .mobile-img {
+    display: none;
+  }
+
 }
