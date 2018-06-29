@@ -1,6 +1,22 @@
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(https://fonts.gstatic.com/s/frederickathegreat/v6/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV--Sjxbc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial'), local('Questrial-Regular'), url(https://fonts.gstatic.com/s/questrial/v7/QdVUSTchPBm7nuUeVf70viFl.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html {
   font-size: 16px;
-  font-family: arial;
+  font-family: Questrial;
 }
 
 body {
@@ -8,11 +24,17 @@ body {
   font-size: 1rem;
 }
 
+video {border-radius: 1rem;}
+
+.flag, img {
+  border-radius: 0.5rem;
+}
+
 main {
   width: 100%;
 }
 
-.graybox {background-color: lightgray;}
+.graybox {background-color: hsl(205, 80%, 95%);}
 
 .column {
   flex-direction: column;
@@ -21,12 +43,16 @@ main {
 /*Header*/
 
 header {
+  font-family: "Fredericka the Great";
   height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 1rem;
   font-size: 1.25rem;
+  width: auto;
+  background-color: hsl(205, 60%, 60%);
+  color: white;
 }
 
 header li {
@@ -38,6 +64,19 @@ header li {
   display: flex;
   align-items: center;
 }
+
+.mobile {
+  width: auto;
+  background-color: white;
+}
+
+.mobile nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
 
 /*Main-Banner General*/
 
@@ -73,9 +112,13 @@ header li {
 
 #start h4 {
   text-align: center;
-  background-color: gray;
+  background-color: hsl(50, 25%, 50%);
   padding: 0.5rem;
   font-size: 1rem;
+  color: white;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-radius: 2.5rem;
 }
 
 #start h3 {
@@ -90,6 +133,7 @@ header li {
 
 #practicing {
   align-items: flex-start;
+  padding-right: 0;
 }
 
 #practicing .text-container h2 {
@@ -186,12 +230,11 @@ header li {
 
 /*Thesis Banner*/
 
-#thesis {
-  align-items: flex-start;
+#thesis {align-items: center;
 }
 
-#thesis .flag {
-  width: 100%;
+#thesis main-banner {
+  padding-right: 0;
 }
 
 footer {
@@ -230,6 +273,10 @@ footer {
   margin: 1rem 0;
   padding: 1rem;
 
+}
+
+#start img {
+  border-radius: 0;
 }
 
 #start h4 {
@@ -302,6 +349,7 @@ footer {
   background-color: gray;
   width: auto;
   padding: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 #thesis .right, #thesis .left h2, #thesis .left p {
@@ -324,11 +372,28 @@ footer {
   margin: 0;
 }
 
+.desktop {
+  display: none;
+}
+
+#subject {
+  text-align: center;
+  background-color: hsl(205, 80%, 95%);
+  font-size: 1.5rem;
+  border-radius: 5rem;
+}
+
 }
 
 @media only screen and (min-width: 751px){
   .mobile-img {
     display: none;
   }
+
+  .mobile {
+    display: none;
+  }
+
+
 
 }
