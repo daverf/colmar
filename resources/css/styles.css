@@ -114,6 +114,7 @@ header li {
 #start .right {
   width: 30%;
   margin-left: 0.75rem;
+  color: hsl(48, 88%, 60%);
 }
 
 #start h4 {
