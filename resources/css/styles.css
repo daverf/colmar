@@ -26,9 +26,15 @@ body {
 
 video {border-radius: 1rem;}
 
-.flag, img {
+.flag, img, .course {
   border-radius: 0.5rem;
 }
+
+.coffee {
+  color: hsl(50, 25%, 5%);
+}
+
+.course img { border-radius: 0.5rem 0.5rem 0 0;}
 
 main {
   width: 100%;
